@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodwagon | Responsive, Ecommerce &amp; Business Templatee</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: Bozart;
+            src: url('fonts/BOZART.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: Dosis;
+            src: url('fonts/Dosis-VariableFont_wght.ttf') format('truetype');
+        }
+        
+        .ft-header-section.sticky-on {
+            position: absolute;
+        }
+        
+        .text-dosis {
+            font-family: 'Dosis' !important;
+        }
+        
+        .text-bozart {
+            font-family: 'Bozart' !important;
+        }
+        
+        body {
+            font-family: 'Dosis' !important;
+            /* font-size: 32px; */
+        }
+        
+        .text-bigger {
+            font-size: 5rem!important;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container">
+                <a class="navbar-brand d-inline-flex" href="index.html"><img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" /><span class="text-1000 fs-3 fw-bold ms-2 text-gradient text-bozart">wadounou</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+                <div class="collapse navbar-collapse border-top border-lg-0 my-2 mt-lg-0" id="navbarSupportedContent">
+                    <div class="mx-auto pt-5 pt-lg-0 d-block d-lg-none d-xl-block">
+                        <p class="mb-0 fw-bold text-lg-center text-dosis">Faîtes vous plaisir n'importe où: <i class="fas fa-map-marker-alt text-warning mx-2"></i><span class="fw-normal"> Position actuelle </span><span> Cotonou, Zongo</span></p>
+                    </div>
+                    <form class="d-flex mt-4 mt-lg-0 ms-lg-auto ms-xl-0">
+                        <div class="input-group-icon pe-2"><i class="fas fa-search input-box-icon text-primary"></i>
+                            <input class="form-control border-0 input-box bg-100" type="search" placeholder="Rechercher un repas" aria-label="Search" />
+                        </div>
+                        <button class="btn btn-white shadow-warning text-warning" type="submit"> <i class="fas fa-user me-2"></i>Connexion</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section class="py-5 overflow-hidden bg-primary" id="home">
+            <div class="container">
+                <div class="row flex-center">
+                    <div class="col-md-5 col-lg-6 order-0 order-md-1 mt-8 mt-md-0">
+                        <a class="img-landing-banner" href="#!"><img class="img-fluid" src="assets/img/gallery/hero-header.png" alt="hero-header" /></a>
+                    </div>
+                    <div class="col-md-7 col-lg-6 py-8 text-md-start text-center">
+                        <h1 class="display-1 fs-md-5 fs-lg-6 fs-xl-8 text-bozart">Vous avez faim ?</h1>
+                        <h1 class="text-800 mb-5 fs-4 text-dosis">Découvrez toutes nos variétés en quelque clics</h1>
+                        <div class="card w-xxl-75">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active mb-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-search me-2"></i>Rechercher</button>
+                                        <!-- <button class="nav-link mb-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-bag me-2"></i>Pickup</button> -->
+                                    </div>
+                                </nav>
+                                <div class="tab-content mt-3" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <form class="row gx-2 gy-2 align-items-center">
+                                            <div class="col">
+                                                <div class="input-group-icon"><i class="fas fa-search text-danger input-box-icon"></i>
+                                                    <label class="visually-hidden" for="inputDelivery">Nom</label>
+                                                    <input class="form-control input-box form-foodwagon-control" id="inputDelivery" type="text" placeholder="Entrer le plat" />
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-3 col-sm-auto">
+                                                <button class="btn btn-danger text-dosis" type="submit">Trouver le repas</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <form class="row gx-4 gy-2 align-items-center">
+                                            <div class="col">
+                                                <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                                                    <label class="visually-hidden" for="inputPickup">Address</label>
+                                                    <input class="form-control input-box form-foodwagon-control" id="inputPickup" type="text" placeholder="Enter Your Address" />
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-3 col-sm-auto">
+                                                <button class="btn btn-danger" type="submit">Find Food</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-lg-7 mx-auto text-center mb-6">
+                        <h1 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3 text-bozart text-bigger">Nos restaurants</h1>
+                    </div>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/food-world.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">20% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/food-world-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Food world</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Ouvre demain</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/pizza-hub.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">10% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/pizzahub-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Pizza hub</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Ouvre demain</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/donuts-hut.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">15% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/donuts-hut-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Actuellement ouvert</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/donuthut.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">15% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/donut-hut-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Actuellement ouvert</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial" style="margin-top:-10rem!important;">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-lg-7 mx-auto text-center mb-6">
+                        <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3 text-bozart text-bigger text-success">Pour les vegans</h5>
+                    </div>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/food-world.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">20% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/food-world-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Food world</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Ouvre demain</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/pizza-hub.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">10% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/pizzahub-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Pizza hub</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-danger p-2"><span class="fw-bold fs-1 text-danger">Ouvre demain</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/donuts-hut.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">15% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/donuts-hut-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Actuellement ouvert</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                        <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100" src="assets/img/gallery/donuthut.png" alt="..." />
+                            <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i class="fas fa-tag me-2 fs-0"></i><span class="fs-0 text-dosis">15% de remise</span></span><span class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0 text-dosis"></i><span class="fs-0">Rapide</span></span>
+                            </div>
+                            <div class="card-body ps-0">
+                                <div class="d-flex align-items-center mb-3"><img class="img-fluid" src="assets/img/gallery/donut-hut-logo.png" alt="" />
+                                    <div class="flex-1 ms-3">
+                                        <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                    </div>
+                                </div><span class="badge bg-soft-success p-2"><span class="fw-bold fs-1 text-success">Actuellement ouvert</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="p-3 bg-1000">
+
+            <div class="container">
+                <div class="row flex-center">
+                    <div class="col-md-6 order-0">
+                        <p class="text-200 text-center text-md-start">Tous droits réservés &copy; <span class="text-bozart">wadounou</span>, 2022</p>
+                    </div>
+                    <div class="col-md-6 order-1">
+                        <p class="text-200 text-center text-md-end"> Made with&nbsp;
+                            <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FFB30E" viewBox="0 0 16 16">
+                              <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                            </svg>&nbsp;by&nbsp;<a class="text-200 fw-bold" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .container-->
+
+        </section>
+
+
+    </main>
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap" rel="stylesheet">
+</body>
+
+</html>
